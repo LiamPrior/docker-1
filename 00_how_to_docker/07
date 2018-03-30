@@ -1,0 +1,1 @@
+docker container inspect overlord | grep IPAddress | grep -v S | awk '{print $2}' | head -n1 | sed 's/"//g; s/,//'
